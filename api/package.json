@@ -1,0 +1,47 @@
+{
+  "name": "apollo-upload-examples-api",
+  "private": true,
+  "license": "MIT",
+  "author": {
+    "name": "Jayden Seric",
+    "email": "me@jaydenseric.com",
+    "url": "https://jaydenseric.com"
+  },
+  "dependencies": {
+    "apollo-server-express": "^2.4.8",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.0.2",
+    "graphql-tools": "^4.0.4",
+    "graphql-upload": "^8.0.4",
+    "koa": "^2.6.2",
+    "lowdb": "^1.0.0",
+    "mkdirp": "^0.5.1",
+    "promises-all": "^1.0.0",
+    "shortid": "^2.2.14"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-import-graphql": "^2.7.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "concurrently": "^4.1.0",
+    "eslint": "^5.12.1",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-vue": "^5.1.0",
+    "inflection": "^1.12.0",
+    "nodemon": "^1.18.9",
+    "prettier": "^1.16.1"
+  },
+  "nodemonConfig": {
+    "ext": "vue,js,json,graphql,gql"
+  },
+  "scripts": {
+    "dev": "nodemon -i db.json  --exec babel-node server.js",
+    "test": "eslint . --ext mjs,js && prettier '**/*.{json,yml,md}' -l"
+  }
+}
